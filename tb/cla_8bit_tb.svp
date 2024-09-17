@@ -1,7 +1,7 @@
 module cla_8bit_tb;
 
-  logic [7:0] a, b;
-  logic [8:0] sum;
+  logic signed [7:0] a, b;
+  logic signed [8:0] sum;
   
   `pragma protect begin_protected
 `pragma protect version = 1
@@ -10,29 +10,29 @@ module cla_8bit_tb;
 `pragma protect key_method = "rsa"
 `pragma protect encoding = ( enctype = "base64" , line_length = 64 , bytes = 256 )
 `pragma protect key_block
-W3E+dxc59iX5G9h/qjuh5SS0kXAD6EgYIRgBH/tiEItg6WQJnLxoPesBU/VTSwjE
-SN1E0dnsLmJrNhv7iLuPFcy31L/St42OubSSBvBBkrGrCRwjzg5rlIq3RgCrJrVo
-/wusgI7D0zXIfG99YWe2Xfua+5JfFA0lfarDFgP/whuYzFMKWCSBw+LOM//XVRiz
-0U7RKnPQrYxJfKnNEBRDAhsVGaBwuPlCriewS1oa8oDdoQqoAiMWTFYApfV3l3B0
-kRvRpxqAzlWimQTkcOxDiklzsLLVkfpQO3NZCuIz1Tzjm1U599zvkmpMU5IJeRJP
-ltS5pYd6zJtE4AIrcUI9iA==
+cAAiAvIequKy1WlYjq1udEfBzWN0PCmOSf8OIdVWmXG+sY1a9v7U3dCCJnSBLmtE
+n2G5y/RHFy9Ix36SmRciTWYjcsHQSvO4llr8PpNr+C2xi0eJiJmlWYxdcO1p/+Q0
+wAPaZPhXsx0fmUIZQztA6bJ6lRxKLLASwbuJgg3Rg+lbOXkT3xad0Z7wVrJSfHlP
+dcknWbq17tTfy5Bm3g4qiP0ssd+d1vZp5nDryO4O+S+8X5LYoTCwUYh/YlMy5f30
+6ZVo12ANKs5AcQjYyT3n2ARQrQiwc/7blWO7Vw0TSX2Q4N2gIqEQIyyZHFqKGhj7
+GZ08nC6xmoos5GQCaduUuQ==
 `pragma protect data_method = "aes128-cbc"
 `pragma protect encoding = ( enctype = "base64" , line_length = 64 , bytes = 704 )
 `pragma protect data_block
-koAbmcMrmkmuTHnLbrsAYkKIMt2/hLFYMZ8vZ/cq+YKFNR13YKYQicdae+UREuJk
-vWyQRN7PIsev+yzKZLfQwY40/6V8m9Q5JeiMHc2Ai8/ghEAaF7mU7gh1dgNgwSCG
-dzGHWKVM/aawJimiIXLsofOlrolkFQdCyBNFSgqHxu76XdeE/flgd8FOobhvEcNg
-JTG6m+Fcz9VipwSq/WkmS2NH2CHG4MOc9HzeFDHqIbb2BW/iYmEj9JTuaZJmOfQf
-fEn8Z+KK4kiV/BF56anSm1xT+YO7oLBmnhe0zjlmh3ULcZhvksrgl7Ciaaq4AehT
-DienfU6THNf9YeL3TF/3/x8D4bSWHfuPzjYydc4lFvL3/ZN5pad9YLkI/nAqE0K+
-EBhLMWbSFCrCkIDfnWFXI9J/qRe4BrplpOPvhV3us6qCGJxZcjJSt8IF5FLq0++7
-YYtZyKNB027f372lxZZV9XmyriLMqxS3T9JaAJj+1lyZJ0KlEticDLWMNOMIAnfR
-KAdbVfaEVysCSQ+bM2tKBlo9ffN9gpndfnQE46T1u/BSyuhmf2lLAM+3SoxGTVC2
-nC0dqO/IhIha2rgPnTxUedvyMVmCTTO/qp8EusOOnT+UUt+S3VWGg3aq0iM+uhFl
-JBuavWswPf9ZPkQAef5XuvDrxkqH9Icuxh98iZ5vsvFEiVhel9n9pXCS5NK6/M1J
-QOiXDCjulWPcvjrJ8O6N/UiGxdxv7v4aj9XfOUsXjqjg5beAuOxVSl1kluvbqNn6
-K1t6yuEs2TPIWP6Eg+UX9GA8RomAcb+j9tDoTVDNQLDC8rS490e5OjLT1Kzq4Lrb
-4j/4Zd9Rlr8P2tiRYAADspYtG4fosOuiJNWEEl7sTRMhY1Hc7eXMKE9gXeNf+7A7
-es8fyXOpfrCiStLMw1XpEfFiYP/dMV9ASihyb32ONGI=
+WisFzv8PewB4EgWc41XsTXuy5RiEHl/0KREJDVAPhY0Ir+xvc0OyZQvE4thD2QAH
+eB/EdiP6SivfKBuWklp0jllncqAtG4ULdiUVNZlGChw9C5q0yycUqsLo2zieY9tR
+qUCvbLWb7fh2RbAFNASxbf+UyUdEv2WLow3v8seaZ9G/1HZC4xqUEF/1GSIHLz1i
+Kf168AJlwtD/8O2guUX6AB6o++XbWJOL7JKfGbtcUORSvvt99/G7NATy0f6y5ZuI
+2c2c1UqHNDQAkhDB6bd6zythdxfQTiaYEyDpUegkGlJ7FsprBbcp2nI2XIA97Jod
+Bququm3mXFRUPyAbAHrXflM2Sd6NrDAkdRh+GNAfRuLpeLtNlvBq9Qd37YgNrQ6/
+jgDgdIa4ae/vu3/4jepLPS3o6OfVxd7kyOcL8iDou8rBt/opd4znxL7PIJ76gD95
+cAzlA0t0rxEK7RxPbgtEdHD0WDTFC44oxvazGmXTWWlSMYSQLfnFKKeOZHhrDOV7
+sfRqgK/9EfbTgS+CDeZ6xDpj2NuOG3KkpOKGOLnr/1EUZtdwYqkh74IBDVC/9T0l
+VWp4BbHPblWRw13uYC1AWjPhJhTINjsfupNd+zgVtB9x4EAfzkMKGBl3uFOv+r02
+ixja0tcLuZqbiKN3s2GXct8hPYZGOXVIOpqmBQ9zp93rJvFUCniWcHwdzv8ZMUEr
+8ItOHXY1xZvejSeDHssYPQCgsJsTmWWj40YDJljzVS3ffiTOyQRMxSCZVhpeE5JG
+szK539FxsOfpcwfeOUDXn5bcL7Kw8kM0OrTNMlwyQdmE85O5miYBME83NsZiTWyf
+Jkx0NVTo9CR3psJY3vukHaDBjPOabjUKfmBZrZDE7X2TcoMwTpvvftApJq0lAbln
+eCluh1GFP7SSaQVUSadiWAz9ljpsfdnLkNbNKPbMKeY=
 `pragma protect end_protected
 endmodule
